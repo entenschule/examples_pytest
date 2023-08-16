@@ -1,8 +1,8 @@
 from proj.duckburg.character_class import (DuckburgCharacter)
 
 
-donald = DuckburgCharacter('Donald', 'Duck', 'Duck')
-daisy = DuckburgCharacter('Daisy', 'Duck', 'Duck')
-scrooge = DuckburgCharacter('Scrooge', 'McDuck', 'Duck')
-gladstone = DuckburgCharacter('Gladstone', 'Gander', 'Goose')
-gyro = DuckburgCharacter('Gyro', 'Gearloose', 'Chicken')
+donald_duck = DuckburgCharacter('Donald', 'Duck', 'Duck')
+daisy_duck = DuckburgCharacter('Daisy', 'Duck', 'Duck')
+scrooge_mcduck = DuckburgCharacter('Scrooge', 'McDuck', 'Duck')
+gladstone_gander = DuckburgCharacter('Gladstone', 'Gander', 'Goose')
+gyro_gearloose = DuckburgCharacter('Gyro', 'Gearloose', 'Chicken')

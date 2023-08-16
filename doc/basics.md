@@ -18,3 +18,22 @@ pytest 7.4.0
 ``` 
 pip install pytest-html
 ```
+
+
+## git
+
+### initial
+
+``` 
+git remote add origin git@github.com:entenschule/examples_pytest.git
+git branch -M main
+git push -u origin main
+```
+
+### usual
+
+``` 
+git status                         # check if changes are committed
+git config --global user.name      # check user if in doubt
+git push
+```
