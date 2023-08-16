@@ -1,0 +1,9 @@
+.idea/*
+*__pycache__*
+*DOWNLOADS*
+*DELETE_ME*
+*.log
+*.py[cod]
+/env/
+/.pytest_cache/
+/*.egg-info/
