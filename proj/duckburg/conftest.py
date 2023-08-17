@@ -6,6 +6,6 @@ from proj.duckburg.character_examples import donald_duck, daisy_duck, scrooge_mc
 list_of_duckburg_characters = [donald_duck, daisy_duck, scrooge_mcduck, gladstone_gander, gyro_gearloose]
 
 
-@fixture(params=list_of_duckburg_characters, ids=lambda x: x.first_name)
+@fixture(params=list_of_duckburg_characters, ids=lambda x: f'{x.first_name} {x.last_name}')
 def duckburg(request):
     yield request.param
