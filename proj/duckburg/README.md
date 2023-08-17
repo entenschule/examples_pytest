@@ -22,24 +22,19 @@ def test_trivial(duckburg):
 The interesting tests are in [test_duckburg.py](test_duckburg.py).
 
 
-``` 
+```
 python -m pytest proj/duckburg -v -m "not trivial"
 python -m pytest proj/duckburg -v -k "test_matching_initials or test_matching_name_and_species"
 ```
 
 For some characters the tests are skipped:
 
-``` 
-(env) tilman@t570:~/learn_py/examples_pytest$ python -m pytest proj/duckburg -v -k "test_matching_initials"
-================================================ test session starts ================================================
-platform linux -- Python 3.8.10, pytest-7.4.0, pluggy-1.2.0 -- /home/tilman/learn_py/examples_pytest/env/bin/python
-cachedir: .pytest_cache
-metadata: {'Python': '3.8.10', 'Platform': 'Linux-5.15.0-78-generic-x86_64-with-glibc2.29', 'Packages': {'pytest': '7.4.0', 'pluggy': '1.2.0'}, 'Plugins': {'html': '3.2.0', 'metadata': '3.0.0'}}
-rootdir: /home/tilman/learn_py/examples_pytest/proj/duckburg
-configfile: pytest.ini
-plugins: html-3.2.0, metadata-3.0.0
-collected 15 items / 10 deselected / 5 selected                                                                     
+```
+python -m pytest proj/duckburg/test_duckburg.py::test_matching_initials -v
+python -m pytest proj/duckburg -k "test_matching_initials" -v
+```
 
+```
 proj/duckburg/test_duckburg.py::test_matching_initials[Donald Duck] PASSED                                    [ 20%]
 proj/duckburg/test_duckburg.py::test_matching_initials[Daisy Duck] PASSED                                     [ 40%]
 proj/duckburg/test_duckburg.py::test_matching_initials[Scrooge McDuck] SKIPPED (exception from the rule)      [ 60%]

@@ -2,6 +2,8 @@
 
 
 ```
+python -m pytest proj/marks -v
+
 python -m pytest proj/marks -m foo -v
 python -m pytest proj/marks -m bar -v
 
